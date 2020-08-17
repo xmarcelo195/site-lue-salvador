@@ -1,0 +1,151 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* capa */
+.capa_bg .img_capa img {
+    width: 100%;
+    width: -moz-available;          /* For Mozzila */
+    width: -webkit-fill-available;  /* For Chrome */
+    width: stretch;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (min-width:1000px) {
+    .capa_bg .img_capa img {
+        height: 300px;
+        object-position: 0 -181px;
+    }
+}
+
+/* Conteudo Projetos */
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 35px;
+    padding:5px;
+}
+.content h2 {
+    font-size: 30px;
+    padding:5px;
+}
+
+.content p {
+    text-align: justify;
+    font-size: 22px;
+    padding: 10px;
+}
+
+h2.pc {
+    display: none;
+}
+h2.cel {
+    display: block;
+}
+
+.alavanque,
+.cafe_empreendedor,
+.start {
+    height: auto; 
+}
+
+.content .image-box {
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 220px;
+    height: 125px;
+}
+
+.content img {
+    object-fit: cover;
+}
+
+.grid_top,
+.grid_bottom{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (min-width:1000px) {
+    .content {
+        text-align: left;
+        max-width: 1000px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .content .intro h1 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .content .intro p{
+        margin-bottom: 25px;
+    }
+    .content h1{
+        font-size: 30px;
+        padding:0px;
+
+    }
+    .content h2{
+        font-size: 30px;
+        padding:0px;
+        padding-top:20px;
+    }
+    .content h3{
+        font-size: 18px;
+        padding:0px;
+
+    }
+
+    .content figure {
+        padding:20px;
+    }
+
+    .content p {
+        font-size: 18px;
+        padding: 5px 0px;
+    }
+
+    h2.pc {
+        display: block;
+    }
+
+    h2.cel {
+        display: none;
+    }
+
+    .alavanque,
+    .cafe_empreendedor,
+    .start {
+        height: 320px; 
+    }
+
+    .content img {
+        transition: all 0.6s;
+        transform: scale(1);
+    }
+
+    .content img:hover {
+        transform: scale(1.2)
+    }
+
+    figure {
+        float: right;
+    }
+    
+    .cafe_empreendedor figure {
+        float: left;
+    }
+}
