@@ -1,5 +1,5 @@
 .img_capa {
-    margin-top: 88px;
+    padding-top: 88px;
     width: 100vw;
     height: 300px;
 }
@@ -22,8 +22,11 @@
 }
 
 @media (min-width:1000px) {
+    .img_capa {
+        padding-top: 0px;
+    }
+
     .capa_bg .img_capa img {
-        margin-top: 0px;
         object-position: 0 -85px;
     }
     .text_capa {
