@@ -5,6 +5,10 @@
 }
 
 /* capa */
+.img_capa {
+    max-width: 100vw;
+}
+
 .capa_bg .img_capa img {
     width: 100%;
     width: -moz-available;          /* For Mozzila */
