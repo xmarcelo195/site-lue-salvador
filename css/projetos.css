@@ -8,10 +8,10 @@
 .img_capa {
     max-width: 100vw;
     overflow: hidden;
+    padding-top: 88px;
 }
 
 .capa_bg .img_capa img {
-    padding-top: 88px;
     width: 100vw;
     height: 250px;
     object-fit: cover;
