@@ -1,11 +1,11 @@
 .img_capa {
-    max-width: 100vw;
+    margin-top: 88px;
+    width: 100vw;
+    height: 300px;
 }
 
 .capa_bg .img_capa img {
-    margin-top: 88px;
-    width: fit-content;
-    height: 300px;
+    
     object-fit: cover;
     object-position: center;
 }
