@@ -12,7 +12,7 @@
 
 .capa_bg .img_capa img {
     margin-top: 88px;
-    width: 100%;
+    width: auto;
     width: -moz-available;          /* For Mozzila */
     width: -webkit-fill-available;  /* For Chrome */
     height: 250px;

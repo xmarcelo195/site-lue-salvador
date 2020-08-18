@@ -265,9 +265,9 @@ header {
 
 .box_img {
     max-width: 100vw;
+    flex-shrink:1;
     display:flex;
     justify-content: center;
-    flex-shrink:1;
 }
 
 .home_about img {
