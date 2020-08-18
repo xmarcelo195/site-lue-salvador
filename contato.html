@@ -1,31 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-bt">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/ea89333f5a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>LUE Salvador</title>
 </head>
+
 <body>
     <header>
         <nav class="menu">
             <div class='logo'>
-                <a href="#"><img src="imagens/LOGO_LUE_d200.png"></a>
+                <a href="index.html"><img src="imagens/LOGO_LUE_d200.png"></a>
             </div>
             <ul id='ul_lista'>
-                <li><a href="#">LUE Salvador</a></li>
+                <li><a href="index.html">LUE Salvador</a></li>
                 <li><a href="quem_somos.html">Quem Somos</a></li>
                 <li><a href="projetos.html">Nossos <br>Projetos</a></li>
                 <li><a href="prosel.html">Processo <br>Seletivo</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-            <div id='menu_cel' class='hamburguer' onclick="clickMenu(this)">
+            <div id='menu_cel' class='hamburguer' onclick="clickMenu()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
         </nav>
     </header>
+
+    <section class="conteudo">
+        <div class="intro">
+            <h1>Contato</h1>
+            <p>Vamos fazer um projeto juntos? Nos diga qual é a sua necessidade e faremos um projeto sob medida para você ou sua organização.</p>
+        </div>
+        <div class="formemail">
+            <div class="form">
+                <form action="mailto:marcelos@luesalvador.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Nome</label>
+                        <input type="text" class="form-control" placeholder="Como devemos te chamar?">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu melhor email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea2">Mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+            </div>
+            <div class="emails">
+                <p>Se você tem alguma necessidade especifíca, utilize os e-mails abaixo para entrar em contato com um dos nossos times:
+                </p>
+                <p>
+                    Fale com a Presidente:<br>
+                    <a href="mailto:presidencia@luesalvador.com">presidencia@luesalvador.com</a>
+                </p>
+                <p>
+                    Fale com o time de Comunicação:<br>
+                    <a href="mailto:comunicacao@luesalvador.com">comunicacao@luesalvador.com</a>
+                </p>
+                <p>
+                    Fale com o time de Projetos:<br>
+                    <a href="mailto:projetos@luesalvador.com">projetos@luesalvador.com</a>
+                </p>
+                <p>
+                    Fale com o time Financeiro:<br>
+                    <a href="mailto:financeiro@luesalvador.com">financeiro@luesalvador.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mapa">
+        <iframe id='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0343273361464!2d-38.5151155498458!3d-12.96965526323875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71605a584241753%3A0xce83e0062e5e6499!2sLiga%20Universit%C3%A1ria%20de%20Empreendedorismo%20-%20Salvador%20(LUE%20Salvador)!5e0!3m2!1sen!2sbr!4v1597767947503!5m2!1sen!2sbr" width="800px" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+    <footer>
+        <div class='footer_grid'>
+            <div class ='footer_texto'>
+                <p>Criada em 2013, a Liga Universitária de Empreendedorismo de Salvador é uma organização sem fins lucrativos que tem como objetivo disseminar a cultura empreendedora em Instituições de Ensino Superior de Salvador por meio de projetos para cada fase de desenvolvimento do empreendedorismo.</p>
+            </div>
+            <div class ='footer_midias'>
+                <h2>Nos siga nas mídias sociais</h2>
+                <div class="grid_icons">
+                    <a target="_blank" href="https://www.facebook.com/luesalvador/"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/luesalvador/"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/luesalvador/"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCRdMfALXtSoP5INc7cvOKWg"><i class="fa fa-youtube"></i></a>
+                  </div>
+            </div>
+        </div>
+        <p class='rodape'>© 2013-2020 Liga Universitária de Empreendedorismo de Salvador. Todos os direitos reservados. Feito com Marx.</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
