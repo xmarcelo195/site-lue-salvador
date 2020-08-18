@@ -10,6 +10,7 @@
 }
 
 .capa_bg .img_capa img {
+    margin-top: 88px;
     width: 100%;
     width: -moz-available;          /* For Mozzila */
     width: -webkit-fill-available;  /* For Chrome */
@@ -21,6 +22,7 @@
 
 @media (min-width:1000px) {
     .capa_bg .img_capa img {
+        margin-top:0;
         height: 300px;
         object-position: 0 -181px;
     }

@@ -3,6 +3,7 @@
 }
 
 .capa_bg .img_capa img {
+    margin-top: 88px;
     width: 100%;
     width: -moz-available;          /* For Mozzila */
     width: -webkit-fill-available;  /* For Chrome */
@@ -19,12 +20,13 @@
     font-size: 32px;
     font-family: Questrial;
     padding: 0 15px;
-    margin-top: 100px;
+    margin-top: 188px;
     text-shadow: 0 0 5px #000;
 }
 
 @media (min-width:1000px) {
     .capa_bg .img_capa img {
+        margin-top: 0px;
         object-position: 0 -85px;
     }
     .text_capa {
