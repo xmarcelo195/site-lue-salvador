@@ -1,11 +1,12 @@
 .img_capa {
-    padding-top: 88px;
-    width: 100vw;
-    height: 300px;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .capa_bg .img_capa img {
-    
+    width: 100vw;
+    padding-top: 88px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
 }
