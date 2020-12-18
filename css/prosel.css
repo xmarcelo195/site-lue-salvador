@@ -1,0 +1,11 @@
+body {
+    background-image: url('/imagens/psel/BG-PROSEL-LUE.png');
+    background-color: #000729;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+
+header {
+    background-color: white;
+}
