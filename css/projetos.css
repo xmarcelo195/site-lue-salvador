@@ -72,6 +72,7 @@ h2.cel {
 
 .content img {
     object-fit: cover;
+    width: inherit;
 }
 
 .grid_top,
