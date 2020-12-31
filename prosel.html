@@ -1,285 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/prosel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ea89333f5a.js" crossorigin="anonymous"></script>
 
     <title>Lue Salvador</title>
 </head>
+
 <body>
-<header>
-    <nav class="menu">
-        <div class='logo'>
-            <a href="index.html"><img src="imagens/LOGO_LUE_d200.png"></a>
+    <header>
+        <nav class="menu">
+            <div class='logo'>
+                <a href="index.html"><img src="imagens/LOGO_LUE_d200.png"></a>
+            </div>
+            <ul id='ul_lista'>
+                <li><a href="index.html">LUE Salvador</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li><a href="projetos.html">Nossos <br>Projetos</a></li>
+                <li><a href="prosel.html">Processo <br>Seletivo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <!-- <li><a href="#">Blog</a></li> -->
+            </ul>
+            <div id='menu_cel' class='hamburguer' onclick="clickMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="titulo">
+        <div class='img-titulo'>
+            <img src="imagens/psel/LOGO_BRANCA_d400.png" alt="Logo PROSEL LUE">
         </div>
-        <ul id='ul_lista'>
-            <li><a href="index.html">LUE Salvador</a></li>
-            <li><a href="quem_somos.html">Quem Somos</a></li>
-            <li><a href="projetos.html">Nossos <br>Projetos</a></li>
-            <li><a href="prosel.html">Processo <br>Seletivo</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <!-- <li><a href="#">Blog</a></li> -->
-        </ul>
-        <div id='menu_cel' class='hamburguer' onclick="clickMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </nav>
-</header>
-<section id="titulo">
-    <div class='img-titulo'>
-        <img src="imagens/psel/LOGO_BRANCA_d400.png" alt="Logo PROSEL LUE">
-    </div>
-    <div class="titulo-esquerda">
-        <h1>
-            Transformamos a vida das pessoas através do empreendedorismo.
-        </h1>
-        <p>
-            Se você também quer fazer parte dessa mudança, inscreva-se no nosso Processo Seletivo.
-        </p>
-        <div class="icone-titulo" style="display:none">
-            <a target="_blank" href="https://www.estudar.org.br/"><img src="imagens/psel/facebook" alt="Compartilhar no Face"></a>
-            <a target="_blank" href="https://www.estudar.org.br/"><img src="imagens/psel/facebook" alt="Compartilhar no Face"></a>
-            <a target="_blank" href="https://www.estudar.org.br/"><img src="imagens/psel/facebook" alt="Compartilhar no Face"></a>
-        </div>
-    </div>
-</section>
-<section id="about">
-    <h2>
-        Somos a Liga Universitária de Empreendedorismo - Salvador
-    </h2>
-    <div class="flex-about">
-        <div class="about-esq">
-            Uma organização sem fins lucrativos, formada por jovens, que tem como propósito, disseminar o empreendedorismo nas instituições de ensino superior de Salvador e da Bahia. Criada em 2013 e incubada pela Fundação Estudar em 2015, somos um dos maiores players do ecossistema de empreendedoismo em Salvador. <a href="quem_somos.html">Saiba mais sobre a nossa história.</a>
-        </div>
-        <div class="about-num">
+        <div class="titulo-esquerda">
+            <h1>
+                Transformamos a vida das pessoas através do empreendedorismo.
+            </h1>
             <p>
-                Nossos principais números:
+                Se você também quer fazer parte dessa mudança, inscreva-se no nosso Processo Seletivo.
             </p>
-            <div class="flex-num">
-                <div class="num-esq">
-                    <h2>12.000</h2>
-                    <p>Pessoas<br>Impactadas</p>
-                </div>
-                <div class="num-dir">
-                    <h2>200</h2>
-                    <p>Projetos<br>Realizados</p>
+            <div class="icone-titulo" style="display:none">
+                <a target="_blank" href="https://www.estudar.org.br/"><img src="imagens/psel/facebook"
+                        alt="Compartilhar no Face"></a>
+                <a target="_blank" href="https://www.estudar.org.br/"><img src="imagens/psel/facebook"
+                        alt="Compartilhar no Face"></a>
+                <a target="_blank" href="https://www.estudar.org.br/"><img src="imagens/psel/facebook"
+                        alt="Compartilhar no Face"></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>
+            Somos a Liga Universitária de Empreendedorismo - Salvador
+        </h2>
+        <div class="flex-about">
+            <div class="about-esq">
+                Uma organização sem fins lucrativos, formada por jovens, que tem como propósito, disseminar o
+                empreendedorismo nas instituições de ensino superior de Salvador e da Bahia. Criada em 2013 e incubada
+                pela Fundação Estudar em 2015, somos um dos maiores players do ecossistema de empreendedoismo em
+                Salvador. <a href="quem_somos.html">Saiba mais sobre a nossa história.</a>
+            </div>
+            <div class="about-num">
+                <div>
+                    <p class="titulo">
+                        Nossos principais números:
+                    </p>
+                    <div class="flex-num">
+                        <div class="num-esq">
+                            <h2>12.000</h2>
+                            <p>Pessoas<br>Impactadas</p>
+                        </div>
+                        <div class="num-dir">
+                            <h2>200</h2>
+                            <p>Projetos<br>Realizados</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="sharks">
-    <h2>Nossos Sharks</h2>
-    <div class="galeria">
-        <div class="box presidencia">
-            <img src="/imagens/psel/presidente.png" alt="Foto Presidencia">
-            <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
-                <div class="icon-in">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-            </a>
-            <h3>Ramir Sena</h3>
-            <p>Presidente da LUE Salvador</p>
-        </div>
+    </section>
+    <section id="sharks">
+        <h2>Nossos Sharks</h2>
+        <div class="galeria">
+            <div class="box presidencia">
+                <img src="/imagens/psel/presidente.png" alt="Foto Presidencia">
+                <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
+                    <div class="icon-in">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </a>
+                <h3>Ramir Sena</h3>
+                <p>Presidente da LUE Salvador</p>
+            </div>
 
-        <div class="box gestaopessoas">
-            <img src="/imagens/psel/pessoas.png" alt="Foto Gestão de Pessoas">
-            <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
-                <div class="icon-in">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-            </a>
-            <h3>Diretor(a) Nome</h3>
-            <p>Diretor(a) de Gestão de Pessoas</p>
-        </div>
+            <div class="box gestaopessoas">
+                <img src="/imagens/psel/pessoas.png" alt="Foto Gestão de Pessoas">
+                <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
+                    <div class="icon-in">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </a>
+                <h3>Adilma Madureira</h3>
+                <p>Presidente da LUE Salvador</p>
+            </div>
 
-        <div class="box comunicacao">
-            <img src="/imagens/psel/comunicacao.png" alt="Foto Comunicação">
-            <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
-                <div class="icon-in">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-            </a>
-            <h3>Ícaro Oliveira</h3>
-            <p>Diretor de Comunicação</p>
-        </div>
+            <div class="box comunicacao">
+                <img src="/imagens/psel/comunicacao.png" alt="Foto Comunicação">
+                <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
+                    <div class="icon-in">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </a>
+                <h3>Ícaro Oliveira</h3>
+                <p>Diretor de Comunicação</p>
+            </div>
 
-        <div class=" box projetos">
-            <img src="/imagens/psel/projetos.png" alt="Foto Projetos">
-            <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
-                <div class="icon-in">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-            </a>
-            <h3>Letícia Sena</h3>
-            <p>Diretora de Projetos</p>
-        </div>
+            <div class="box projetos">
+                <img src="/imagens/psel/projetos.jpg" alt="Foto Projetos">
+                <a target="_blank" href="https://www.linkedin.com/in/leticiasenna/">
+                    <div class="icon-in">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </a>
+                <h3>Letícia Sena</h3>
+                <p>Diretora de Projetos</p>
+            </div>
 
-        <div class="box financas">
-            <img src="/imagens/psel/financas.png" alt="Foto Presidencia">
-            <a target="_blank" href="https://www.linkedin.com/company/luesalvador/">
-                <div class="icon-in">
-                    <i class="fa fa-linkedin"></i>
-                </div>
-            </a>
-            <h3>Nome Finanças</h3>
-            <p>Diretor(a) Financeiro</p>
         </div>
-    </div>
-</section>
-<section id="oportunidades">
-    <h2>
-        Oportunidades para Assessores
-    </h2>
-    <p>
-        Sendo Assessor, você vai ter a oportunidade de colocar em prática seus conhecimentos, desenvolver habilidades e fazer projetos para ajudar empreendedores. Temos vagas em diversas áreas, e você pode escolher de acordo com a sua formação.
-    </p>
-    <p>
-        <strong>Pré-requisitos:</strong>
-    </p>
-    <ul>
-        <li>Todos os cursos de graduação e pós-graduação;</li>
-        <li>Cursando graduação, a partir do segundo ano, ou pós-graduação;</li>
-        <li>Facilidade em trabalho em equipe</li>
-    </ul>
-    <p>
-        <strong>VAGAS DISPONÍVEIS POR ÁREAS:</strong>
-    </p>
-    <div class="flex-oport">
+    </section>
+
+    <section id="oportunidades">
+        <div class="oportunidades">
+            <h2>
+                Oportunidades para Assessores
+            </h2>
+            <p>
+                Sendo Assessor, você vai ter a oportunidade de colocar em prática seus conhecimentos, desenvolver
+                habilidades e fazer projetos para ajudar empreendedores. Temos vagas em diversas áreas, e você pode
+                escolher de acordo com a sua formação.
+            </p>
+            <p>
+                <strong>Pré-requisitos:</strong>
+            </p>
+            <ul>
+                <li>Todos os cursos de graduação e pós-graduação;</li>
+                <li>Cursando graduação, a partir do segundo ano, ou pós-graduação;</li>
+                <li>Facilidade em trabalho em equipe</li>
+            </ul>
+            <h3>
+                <strong>VAGAS DISPONÍVEIS POR ÁREAS:</strong>
+            </h3>
+            <div class="flex-oport">
+                <a target="_blank" href="">
+                    <div class="box-oport">
+                        <i class="fas fa-comments"></i>
+                        <p>Comunicação</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box-oport">
+                        <i class="fas fa-cubes"></i>
+                        <p>Projetos</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box-oport">
+                        <i class="fas fa-users"></i>
+                        <p>Pessoas</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box-oport">
+                        <i class="fas fa-coins"></i>
+                        <p>Financeiro</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="inscricao">
         <a href="">
-            <div>
-               <img src="" alt="">
-               <p>Comunicação</p>
+            <div class="btn-insc">
+                INSCREVA-SE
             </div>
         </a>
-        <a href="">
+        <h2>
+            Etapas do Processo Seletivo
+        </h2>
+        <span class="linha"></span>
+        <div class="flex-passos">
             <div>
-               <img src="" alt="">
-               <p>Projetos</p>
+                <h3>1</h3>
+                <p class="insc">Inscrições Online</p>
             </div>
-        </a>
-        <a href="">
             <div>
-               <img src="" alt="">
-               <p>Pessoas</p>
+                <h3>2</h3>
+                <p>Entrevista + Dinâmica de Grupo</p>
             </div>
-        </a>
-        <a href="">
             <div>
-               <img src="" alt="">
-               <p>Financeiro</p>
+                <h3>3</h3>
+                <p>Painel com Diretores</p>
             </div>
-        </a>
-    </div>
-</section>
-<section id="inscricao">
-    <div class="btn-insc">
-        <a href="">INSCREVA-SE</a>
-    </div>
-    <h2>
-        Etapas do Processo Seletivo
-    </h2>
-    <div>
-        <h3>1</h3>
-        <p>Inscrições Online</p>
-    </div>
-    <div>
-        <h3>2</h3>
-        <p>Entrevista + Dinâmica de Grupo</p>
-    </div>
-    <div>
-        <h3>3</h3>
-        <p>Painel com Diretores</p>
-    </div>
-    <div>
-        <h3>4</h3>
-        <p>Processo de Compromisso</p>
-    </div>
-</section>
-<section id="beneficios">
-    <div class="beneficios">
-        <h2>Principais benefícios de ser LUE</h2>
-        <div class="icones">
-            <div class="box-icon">
-                <img src="imagens/psel/handshake_d200.png" alt="Icone comprimentando">
-                <p>Contato com grandes players do ecossistema empreendedor.</p>
-            </div>
-            <div class="box-icon">
-                <img src="imagens/psel/teamwork_d200.png" alt="Icone Trabalho em Equipe">
-                <p>Participação em ​projetos multidisciplinares de alto impacto.</p>
-            </div>
-            <div class="box-icon">
-                <img src="imagens/psel/solidarity_d200.png" alt="Icone Voluntarios">
-                <p>Experiência em um programa de voluntariado.</p>
-            </div>
-            <div class="box-icon">
-                <img src="imagens/psel/approved_d200.png" alt="Icone Aprovação">
-                <p>Vivência no gerenciamento de projetos.</p>
-            </div>
-            <div class="box-icon">
-                <img src="imagens/psel/development_d200.png" alt="Icone Desenvolvimento">
-                <p>Plano de desenvolvimento contínuo.</p>
+            <div>
+                <h3>4</h3>
+                <p>Processo de Compromisso</p>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="formulario">
-    Inserir link do google forms
-</section>
-
-<section id="FAQ">
-    <h2>Perguntas Frequentes</h2>
-    <div class="question">
-        <h3>Como faço para participar?</h3>
-        <p><a href="">Acesse aqui</a> e participe! Nesta página você vai encontrar todas as informações para fazer sua candidatura!</p>
-        <p>Não aceitaremos currículos por e-mail ou cadastrados em outro site que não seja o endereço citado acima ou essa página. As inscrições estarão abertas até o dia 02/02/2020.</p>
-    </div>
-    <div class="question">
-        <h3>Qual é a história e valores da LUE Salvador?</h3>
-        <p>Você pode descobrir um pouco mais sobre nossa história nessa <a href="">clicando aqui.</a></p>
-    </div>
-    <div class="question">
-        <h3>Se quiser saber o andamento deste processo onde vou?</h3>
-        <p>Todas as comunicações do Processo Seletivo acontecerão através de e-mail. Verifique a caixa de entrada, SPAM e outras abas do seu e-mail. Caso tenha qualquer pendência ou necessidade de entrar em contato conosco, basta enviar um e-mail para <a href="mailto:gp@luesalvador.com">gp@luesalvador.com</a>, com o título "PROSEL 2019".</p>
-    </div>
-    <div class="question">
-        <h3>Se eu não tiver o perfil desejado posso me candidatar?</h3>
-        <p>Pode, mas existem alguns pré-requisitos e competências que são mínimas para participação dos programas. Esses itens serão avaliados e informados nos retornos do processo seletivo. </p>
-    </div>
-    <div class="question">
-        <h3>Vou receber um feedback da minha participação?</h3>
-        <p>Você receberá um retorno, independentemente de ser positivo ou negativo, na mensagem por e-mail.</p>
-    </div>
-    <div class="question">
-        <h3>Eu escolho uma área? Como será a alocação final?</h3>
-        <p>No momento da inscrição você poderá  escolher até duas área, porém no decorrer do processo, poderemos direcionar os candidatxs, levando-se em consideração o seu perfil e as oportunidades nas áreas da LUE Salvador.</p>
-    </div>
-</section>
-
-<footer>
-    <div class='footer_grid'>
-        <div class ='footer_texto'>
-            <p>Criada em 2013, a Liga Universitária de Empreendedorismo de Salvador é uma organização sem fins lucrativos que tem como objetivo disseminar a cultura empreendedora em Instituições de Ensino Superior de Salvador por meio de projetos para cada fase de desenvolvimento do empreendedorismo.</p>
+    </section>
+    <section id="beneficios">
+        <div class="beneficios">
+            <h2>Principais benefícios de ser LUE</h2>
+            <div class="icones">
+                <div class="box-icon">
+                    <img src="imagens/psel/handshake_d200.png" alt="Icone comprimentando">
+                    <p>Contato com grandes players do ecossistema empreendedor.</p>
+                </div>
+                <div class="box-icon">
+                    <img src="imagens/psel/teamwork_d200.png" alt="Icone Trabalho em Equipe">
+                    <p>Participação em ​projetos multidisciplinares de alto impacto.</p>
+                </div>
+                <div class="box-icon">
+                    <img src="imagens/psel/solidarity_d200.png" alt="Icone Voluntarios">
+                    <p>Experiência em um programa de voluntariado.</p>
+                </div>
+                <div class="box-icon">
+                    <img src="imagens/psel/approved_d200.png" alt="Icone Aprovação">
+                    <p>Vivência no gerenciamento de projetos.</p>
+                </div>
+                <div class="box-icon">
+                    <img src="imagens/psel/development_d200.png" alt="Icone Desenvolvimento">
+                    <p>Plano de desenvolvimento contínuo.</p>
+                </div>
+            </div>
         </div>
-        <div class ='footer_midias'>
-            <h2>Nos siga nas mídias sociais</h2>
-            <div class="grid_icons">
-                <a target="_blank" href="https://www.facebook.com/luesalvador/"><i class="fa fa-facebook"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/company/luesalvador/"><i class="fa fa-linkedin"></i></a>
-                <a target="_blank" href="https://www.instagram.com/luesalvador/"><i class="fa fa-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCRdMfALXtSoP5INc7cvOKWg"><i class="fa fa-youtube"></i></a>
-              </div>
+    </section>
+
+    <section id="formulario">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfaPMjcXl2ghwM8Ag-DuuxC2BMQvl45LrbSXUwV9sf_Z_JLBw/viewform?embedded=true"
+            width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </section>
+
+    <section id="faq">
+        <div class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="question">
+                <h3>Como faço para participar?</h3>
+                <p> Nesta página você vai encontrar todas as informações para fazer
+                    sua candidatura!</p>
+                <p>Não aceitaremos currículos por e-mail ou cadastrados em outro site que não seja o endereço citado
+                    acima
+                    ou essa página. As inscrições estarão abertas até o dia 02/02/2020.</p>
+            </div>
+            <div class="question">
+                <h3>Qual é a história e valores da LUE Salvador?</h3>
+                <p>Você pode descobrir um pouco mais sobre nossa história nessa <a href="quem_somos.html">clicando
+                        aqui.</a></p>
+            </div>
+            <div class="question">
+                <h3>Se quiser saber o andamento deste processo onde vou?</h3>
+                <p>Todas as comunicações do Processo Seletivo acontecerão através de e-mail. Verifique a caixa de
+                    entrada,
+                    SPAM e outras abas do seu e-mail. Caso tenha qualquer pendência ou necessidade de entrar em contato
+                    conosco, basta enviar um e-mail para <a href="mailto:gp@luesalvador.com">gp@luesalvador.com</a>, com
+                    o
+                    título "PROSEL 2021".</p>
+            </div>
+            <div class="question">
+                <h3>Se eu não tiver o perfil desejado posso me candidatar?</h3>
+                <p>Pode, mas existem alguns pré-requisitos e competências que são mínimas para participação dos
+                    programas.
+                    Esses itens serão avaliados e informados nos retornos do processo seletivo. </p>
+            </div>
+            <div class="question">
+                <h3>Vou receber um feedback da minha participação?</h3>
+                <p>Você receberá um retorno, independentemente de ser positivo ou negativo, na mensagem por e-mail.</p>
+            </div>
+            <div class="question">
+                <h3>Eu escolho uma área? Como será a alocação final?</h3>
+                <p>No momento da inscrição você poderá escolher até duas área, porém no decorrer do processo, poderemos
+                    direcionar os candidatxs, levando-se em consideração o seu perfil e as oportunidades nas áreas da
+                    LUE
+                    Salvador.</p>
+            </div>
         </div>
-    </div>
-    <p class='rodape'>© 2013-2020 Liga Universitária de Empreendedorismo de Salvador. Todos os direitos reservados.</p>
-</footer>
-<script src="js/script.js"></script>
+    </section>
+
+    <footer>
+        <div class='footer_grid'>
+            <div class='footer_texto'>
+                <p>Criada em 2013, a Liga Universitária de Empreendedorismo de Salvador é uma organização sem fins
+                    lucrativos que tem como objetivo disseminar a cultura empreendedora em Instituições de Ensino
+                    Superior de Salvador por meio de projetos para cada fase de desenvolvimento do empreendedorismo.</p>
+            </div>
+            <div class='footer_midias'>
+                <h2>Nos siga nas mídias sociais</h2>
+                <div class="grid_icons">
+                    <a target="_blank" href="https://www.facebook.com/luesalvador/"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/luesalvador/"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/luesalvador/"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCRdMfALXtSoP5INc7cvOKWg"><i
+                            class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class='rodape'>© 2013-2020 Liga Universitária de Empreendedorismo de Salvador. Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

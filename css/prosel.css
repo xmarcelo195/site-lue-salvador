@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: white;
 }
@@ -15,14 +19,14 @@ header {
     #titulo,
     #about,
     #sharks,
-    #oportunidades,
+    .oportunidades,
     #inscricao,
     #beneficios,
     #formulario,
-    #FAQ {
+    .faq {
         margin-left: auto;
         margin-right: auto;
-        width: 1000px;
+        max-width: 1000px;
     }
 }
 
@@ -36,7 +40,7 @@ header {
 }
 
 #titulo h1 {
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -68,6 +72,81 @@ header {
     background-color: #44a4bc;
 }
 
+@media (min-width:1000px) {
+    #about {
+        display: block;
+    }
+
+    #titulo {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .titulo-esquerda {
+        width:600px;
+    }
+    #titulo h1 {
+        font-size: 60px;
+        text-align: left;
+    }
+    #titulo p {
+        padding-top: 20px;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    #about h2 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .flex-about {
+        display: flex;
+        padding-bottom:40px;
+    }
+
+    .flex-num {
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+    }
+
+    .titulo {
+        font-size: 30px !important;
+    }
+
+    .about-num {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-num p {
+        text-align: center;
+        font-size:25px !important;
+    }
+
+    .about-num h2 {
+        text-align: center !important;
+    }
+
+    .about-esq {
+        font-size: 25px;
+        text-align: left;
+        padding-right: 25px;
+    }
+
+    .about-esq a {
+        color: white;
+        text-decoration: underline;
+    }
+
+}
+
+/* sharks */
+
 #sharks {
     background-color: #053050;
 }
@@ -86,8 +165,8 @@ header {
     background-color: #0077b5;
     width: 48px;
     height: 30px;
-    left: 34vw;
     top: -39px;
+    left: 10px;
 }
 
 .fa-linkedin {
@@ -102,27 +181,333 @@ header {
     padding-bottom: 20px;
 }
 
+.box {
+    width: 180px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.box img {
+    width: 146px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}    
+
+
 @media (min-width:1000px) {
     #sharks h2 {
         text-align: left;
         padding-left: 50px;
         padding-top: 10px;
-    }
-
-    .box {
-        width: 180px;
+        padding-bottom: 15px;
     }
 
     .galeria {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     
     #sharks .icon-in {
         left: 10px;
     }
+
+    #sharks {
+        margin-bottom:30px;
+    }
+
+}
+
+/* Oportunidades */
+
+#oportunidades {
+    background-color: #44a4bc;
+    padding-bottom: 40px;
+}
+
+#oportunidades a p {
+    color:white;
+}
+
+#oportunidades h2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#oportunidades p {
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left:10px;
+}
+
+#oportunidades h3 {
+    padding-bottom: 15px;
+    padding-top:15px;
+}
+
+#oportunidades ul {
+    padding: 10px 10px 10px 20px;
+}
+
+.flex-oport a {
+    display:flex;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom:10px;
+    border: 1px solid white;
+}
+
+.box-oport i {
+    font-size: 50px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.linha {
+    display:none;
+}
+
+
+@media (min-width:1000px) {
+    .flex-oport {
+        display:flex;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .oportunidades h2 {
+        padding-top:25px !important;
+        font-size: 30px;
+    }
+
+    .oportunidades ul {
+        font-size: 20px;
+        padding-bottom:10px;
+    }
+
+    .oportunidades p {
+        font-size: 20px;
+    }
+
+    .oportunidades h3{
+        padding-top: 20px;
+    }
+
+    .oportunidades a:hover {
+        background-color: #82d6eb;
+        transition: 0.5s;
+    }
+
+    #oportunidades {
+        padding-bottom:200px;
+    }
+
+    .flex-passos {
+        height:180px;
+        display:flex;
+        position: relative;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #inscricao h3 {
+        font-size: 25px;
+        width: 50px !important;
+        height:50px !important;
+        border: none !important;
+        background-color: #82d6eb;
+    }
+
+    #inscricao p {
+        max-width: 140px;
+    }
+
+    #inscricao .insc {
+        max-width: 100px;
+    }
+
+    .linha {
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        position:relative;
+        width:716px;
+        border-bottom:1px solid white;
+        bottom: -42px;
+    }
     
-    a {
-        text-decoration: none;
+    #inscricao h2 {
+        font-size: 30px;
+        text-justify: left !important;
+        padding-left: 30px !important;
+    }
+
+    #inscricao {
+        position: relative !important;
+        top: -130px !important;
+    }
+
+    #beneficios {
+        position:relative;
+        top:-100px;
+    }
+}
+
+/* Inscreva-se */
+
+#inscricao {
+    background: #053050;
+    padding-bottom:20px;
+}
+
+a .btn-insc {
+    position: relative;
+    top:-20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0323f;
+    width: 190px;
+    height: 40px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#inscricao h2 {
+    padding: 5px 5px 15px 5px;
+}
+
+#inscricao h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inscricao p {
+    padding-top:5px;
+    padding-bottom:20px;
+}
+
+/* Beneficios */
+
+#beneficios h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.icones img {
+    width: 100px;
+}
+
+.icones p {
+    padding: 0 10px 20px 10px;
+}
+
+@media (min-width:1000px) {
+
+    .beneficios h2 {
+        padding-top:30px !important;
+        font-size:30px;
+
+    }
+    
+    .box-icon img {
+        width:120px;
+        height:120px;
+    }
+    .box-icon {
+        display:inline-block;
+        margin: 20px;
+        padding-left: 20px;
+        padding-right:20px;
+    }
+    .box-icon p {
+        font-size: 18px;
+        max-width: 200px;
+    }
+
+}
+/* Formulario */
+
+#formulario {
+    padding-top:20px;
+    background-color: #c1cbd3;
+}
+
+#formulario iframe{
+    overflow-x: hidden;
+    position: relative;
+}
+
+@media (min-width:1000px) {
+    #formulario {
+        margin-bottom: 40px;
+        height:50%;
+    }
+}
+/* FAQ */
+
+#faq h2 {
+    margin-top:20px;
+    padding-bottom:10px;
+
+}
+
+#faq a {
+    color:white;
+    text-decoration: underline;
+}
+
+#faq p {
+    padding-bottom: 10px;
+}
+
+#faq h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+@media (min-width:1000px) {
+    .faq {
+        padding-top: 40px;
+    }
+    #faq {
+        background-color:white;
+    }
+    #faq h2 {
+        margin-bottom:20px !important;
+        width: 800px;
+        padding:10px;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        font-size: 30px;
+        background-color: #44a4bc;
+    }
+
+    #faq h3 {
+        color:black;
+        text-align: left;
+        font-size:25px;
+    }
+
+    #faq p {
+        color: black;
+        text-align: left;
+        font-size:20px;
+    }
+
+    #faq a {
+        color:#44a4bc;
     }
 }

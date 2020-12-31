@@ -22,6 +22,12 @@
     text-shadow: 0 0 5px #000;
 }
 
+@media (max-width:325px) {
+    .capa_bg h1 {
+        font-size: 27px;
+    }
+}
+
 @media (min-width:1000px) {
     .img_capa {
         padding-top: 0px;
